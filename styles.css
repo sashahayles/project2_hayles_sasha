@@ -1,0 +1,207 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+#container {
+	margin: 5% auto;
+	width: 100%;
+}
+
+main {
+	width: 100%;
+	margin: auto;
+	max-width: 1000px;
+}
+
+figcaption{
+	font-family: 'poppins', sans-serif;
+	font-size: .8em;
+	color:#bdb6b6;
+	padding-left:3%;
+}
+
+nav {
+	padding-top:0.5%;
+}
+
+.menu nav ul li{
+	display: block;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1em;
+}
+.menu nav ul li a {
+	color:black;
+	font-weight: bold;
+	text-decoration: none;
+}
+.menu nav ul li a:hover {
+	color: #97908e;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.logo{
+	padding-left:8%;
+	max-width:23%;
+}
+
+aside {
+    float: left;
+    margin-top: 6%;
+    transform: translate(0%, 95%);
+}
+
+section img{
+	width: 100%;
+	max-height:26vh;
+
+}
+section {
+	padding: 2% 0% 0% 8%;
+  text-align: left;
+  max-width: 80%;
+  max-height: 90%;
+}
+
+footer img{
+	width:4vh;
+	padding-top:1%;
+}
+/*Photography Page*/
+section.gallery img{
+	width: 25%;
+	height: 50%;
+}
+section.gallery{
+  max-width: 80%;
+  margin:7%;
+  text-align: left;
+  max-height: 90%;
+}
+/*end photography page*/
+.column {
+	max-width:50%;
+}
+span {
+	color:#4f719d;
+}
+.color{
+	color: #75a0d8;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*nav start*/
+.desktop-menu{
+	display:none;
+}
+/*hamburger menu styles*/
+.hamburger{
+  background:none;
+	position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.7em; width:25%; background:#dddddd; font-family: 'poppins',sans-serif; position:absolute; text-align:left;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:white 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+/* end hamburger menu*/
+
+/* Start media 900px query*/
+@media (min-width:900px){
+	section img {
+		width: 37vh;
+	}
+}
+/* end media 900px query*/
+
+@media (min-width:965px){
+	article{
+		text-align: center;
+		font-family: 'Poppins', sans-serif;
+		font-size: 1.1em;
+	}
+
+	.menu, .hamburger, .cross{
+  	display: none;
+  }
+	.desktop-menu {
+		display: block;
+		text-align: left;
+		font-family: 'Poppins', sans-serif;
+		font-size: .9em;
+    padding-left: 24%;
+}
+.desktop-menu ul{
+	list-style-type: none;
+}
+.desktop-menu ul li a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+.desktop-menu ul li{
+	padding:15%;
+}
+.desktop-menu ul li a:hover {
+	color: #999; text-decoration:none;
+}
+footer{
+	padding:2%;
+ }
+}
+
+/*column layout for photos*/
+
+
+@media (max-width: 965px) {
+	article {
+		display: none;
+	}
+}
