@@ -118,7 +118,7 @@ span {
   max-width: 23%;
 }
 .siteform{
-  max width:100%;
+  max-width:100%;
   margin:0 auto;
   text-align: left;
   font-family: 'Poppins', sans-serif;
@@ -130,10 +130,11 @@ span {
   padding: 1%;
   max-width:95%;
   border-radius:1%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .label_input {
   display: block;
-  padding: 1S%;
+  padding: 1%;
 }
 .reset input,
 .submit input {
@@ -174,6 +175,30 @@ h3 {
 	padding:4% 0% 0% 10%;
 }
 /*end contact form*/
+/*portfolio*/
+.port{
+	display:flex;
+	padding-left: 5%;
+}
+.port img{
+	max-width:30%;
+	box-shadow: 0 4px 8px 0 rgba(3, 4, 2, 0.3), 0 6px 20px 0 rgba(2, 6, 1, 0.19);
+}
+h2{
+	padding-bottom:4%;
+	font-size:1em;
+	font-family: 'poppins',sans-serif;
+	font-weight: 400;
+}
+.port-title{
+	font-size:1.2em;
+  font-family: 'poppins', sans-serif;
+	font-weight: 600;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*portfolio end */
 
 /*hamburger menu styles*/
 .hamburger {
@@ -300,3 +325,4 @@ footer{
     margin: 0.4% 0.2%;
 	}
 }
+760 fix font
