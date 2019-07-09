@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sasha Tania</title>
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<script src="js/html5shiv-printshiv.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!--[if lt IE 9]>
+            <script src="js/html5shiv-printshiv.min.js"></script>
+        <![endif]-->
+</head>
+<header>
+  <div id="container">
+    <button class="hamburger">&#9776;</button> <button class="cross">&#735;</button>
+    <nav class="menu">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="photography.html">Photography</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <figure>
+     <img alt="logo" class="logo-contact" src="images/logo4.png" title="logo">
+    </figure>
+    <aside>
+      <nav class="desktop-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="#">Portfolio</a>
+          </li>
+          <li>
+            <a href="photography.html">Photography</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
+</header>
+<body>
+<section class="send">
+  <div class="siteform">
+   <h3>Send a message.</h3>
+   <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+     <div class ="first-name input-section">
+       <label for="firstname" class="label_input"> First Name*
+       </label>
+       <input type="text" name="req_firstname" id="firstname" placeholder="Enter First Name"/>
+     </div>
+
+     <div class="last-name input-section">
+       <label for="lastname" class="label_input">Last Name*
+       </label>
+       <input type="text" name="req_lastname" id="lastname" placeholder="Enter Last Name"/>
+     </div>
+
+     <div class="email input-section">
+       <label for="email" class="label_input">Email*
+       </label>
+       <input type="email" name="req_email" id="email" placeholder="Enter Email"/>
+     </div>
+
+     <div class="telephone input-section">
+       <label for="telephone" class="label_input">Phone Number*
+       </label>
+       <input type="tel" name="telephone" id="telephone" placeholder="Enter Telephone Number"/>
+     </div>
+
+     <div class="message input_section">
+       <label for="message" class="label_input">Type Your Message*
+       </label>
+       <textarea name="message" id="message" cols="40" rows="5"
+       placeholder="Type Message"></textarea>
+     </div>
+
+     <div class="reset">
+       <input type="reset" value="Refresh"/>
+     </div>
+
+     <div class="submit">
+       <input type="submit" value="Send Message">
+     </div>
+    </form>
+  </div>
+ </section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
