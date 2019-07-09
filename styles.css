@@ -181,7 +181,7 @@ h3 {
 	padding-left: 5%;
 }
 .port img{
-	max-width:30%;
+	max-width:50%;
 	box-shadow: 0 4px 8px 0 rgba(3, 4, 2, 0.3), 0 6px 20px 0 rgba(2, 6, 1, 0.19);
 }
 h2{
@@ -325,4 +325,3 @@ footer{
     margin: 0.4% 0.2%;
 	}
 }
-760 fix font
